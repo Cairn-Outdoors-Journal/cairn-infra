@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: opentofu/setup-opentofu@v1
+      - uses: hashicorp/setup-terraform@v3
         with:
-          tofu_version: 1.13.1
-      - run: tofu fmt -check -recursive
+          terraform_version: 1.16.4
+      - run: terraform fmt -check -recursive
 
   validate:
     name: Validate ${{ matrix.environment }}
@@ -31,8 +31,8 @@ jobs:
         working-directory: envs/${{ matrix.environment }}
     steps:
       - uses: actions/checkout@v4
-      - uses: opentofu/setup-opentofu@v1
+      - uses: hashicorp/setup-terraform@v3
         with:
-          tofu_version: 1.13.1
-      - run: tofu init -backend=false -input=false
-      - run: tofu validate
+          terraform_version: 1.16.4
+      - run: terraform init -backend=false -input=false
+      - run: terraform validate

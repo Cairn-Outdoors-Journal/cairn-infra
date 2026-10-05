@@ -1,17 +1,11 @@
-# This file is maintained automatically by "tofu init".
+# This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
-provider "registry.opentofu.org/cloudflare/cloudflare" {
+provider "registry.terraform.io/cloudflare/cloudflare" {
   version     = "5.27.0"
   constraints = "~> 5.27"
   hashes = [
-    "h1:3m8NMkPCgRpG7Vq6khSq6e4DFy912/QstELqC2LTdZc=",
-    "h1:7aAyZL0SdWmVAUvmZzFeun6xe82y/z29nSzTSmkuOXE=",
     "h1:9YNVP8ZdD+Pp5Lu+oJ7AmXMNZ5gnpYgwEpGmcfpwSiQ=",
-    "h1:BXwBsvqti6ksI41DfhrGG3myGhPapqYYuCZBYEp9G3E=",
-    "h1:V5YAQp7xBX1ExB7x8vQvDMV1M36EoCNXPN//yiWgO+o=",
-    "h1:dRh3pOxWvkd69IrxOpIhp+pIRvLLQmPfsei6XBdq56A=",
-    "h1:emwSQj4O9ZCnGMfi2/AUMiq5dD3iQgMqnlLPVOqfoCE=",
     "h1:hBbz7uxd+0ZmaFyFm4wBEhe0WkZq4tNLt8wUriBysHU=",
     "zh:0af697c42fc9c5c7359e9209dd2502784789d07dd803ef8ed0e9e1dbc0aea0ff",
     "zh:234be996462aaa9556e024f8434c238cc70bd84960283a4a85d0e096efd9f8c7",
@@ -25,23 +19,12 @@ provider "registry.opentofu.org/cloudflare/cloudflare" {
   ]
 }
 
-provider "registry.opentofu.org/kislerdm/neon" {
+provider "registry.terraform.io/kislerdm/neon" {
   version     = "0.18.0"
   constraints = "~> 0.18"
   hashes = [
-    "h1:AetlkLcPIwvTib6SIopT68h6hMW5Wm07QL0RnIwG6C8=",
-    "h1:GBgK2v3S+flOEBNfUd29YVYuSAzURP+wYsIPlIeg4ZY=",
-    "h1:H8frwI64MFIT0X7r7N7rkYOo8cvdZXHocNSkFDN3hFw=",
-    "h1:JqhW3yWjNllykjAt8LoJe7dk0qbePAnxKN3LU5vPot0=",
-    "h1:aGlh3bVsXYfYPpM4OLVuycYBE7F8IbTFHnwrszWxlqM=",
     "h1:jIfgWCidoViNjf3P3dFb2scMnC5vk1SygHSlXIDXRqo=",
-    "h1:m56HcddRzmZ1n3bbbfUGftTTVGdWVzMseDX2wzos5Ks=",
-    "h1:mYd1JpflGpYarL9hj8A7G3WHpVNDVM6pYE0FXF7nBYg=",
-    "h1:mwUiLsgOm5iKA/LGusyh8Z/MPd0Z8GRkcih4re+czDc=",
-    "h1:n9JHEyjHmWJh5ng5Ao/+GX202H+K8IijWt6ooq5jFFA=",
     "h1:tcGix4plewNFy/ogZAItaUqreW9HjuxszUkD0Cma6lg=",
-    "h1:wa/NxEvjSvbWvDhRykKwgUkesKojPkS/dtL6N8I5OxE=",
-    "h1:zjwEdSco98dQ8RurMfo1j0oDHk+GhlMRXqh6n0D1oL8=",
     "zh:098c5e17387113154965b49b6132a997b0a85d870cd50ab824d778ddf52b1a6f",
     "zh:0e9f82511541ac35b6c542165a4ecd37b24e7d362b04cb66797845b871489b7c",
     "zh:136ad6984a8823f36f4cac32d7e46a567a06dc08d097d086e8c8849914007cb4",

@@ -13,9 +13,9 @@ terraform {
   }
 
   # State lives in an R2 bucket created once by hand (see README). The account-specific endpoint
-  # is passed at init time: tofu init -backend-config=backend.hcl
+  # is passed at init time: terraform init -backend-config=backend.hcl
   backend "s3" {
-    bucket                      = "cairn-tofu-state"
+    bucket                      = "cairn-terraform-state"
     key                         = "prod/terraform.tfstate"
     region                      = "auto"
     use_path_style              = true
